@@ -33,13 +33,13 @@ export default function BookingForm() {
 
   return (
     <section id="booking" className="py-20 bg-[#121212]">
-      <div className="container mx-auto px-4 max-w-3xl">
+      <div className="w-[90%] md:w-[80%] mx-auto px-4 max-w-3xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-display">
-            Agendar Entrega
+            Agendar
           </h2>
           <p className="text-gray-400">
-            Não realizamos visitas técnicas. Agende a entrega do seu equipamento em nosso endereço para avaliação.
+            Agende a entrega do seu equipamento em nosso endereço para avaliação.
           </p>
         </div>
 

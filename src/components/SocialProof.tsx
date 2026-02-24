@@ -25,49 +25,13 @@ const testimonials = [
     text: "Rápido e eficiente. Meu computador estava travando muito e agora parece novo.",
     rating: 5,
     relative_time_description: "1 semana atrás"
-  },
-  {
-    author_name: "Fernanda Lima",
-    text: "Troquei meu HD por SSD e a diferença foi gritante. O atendimento foi super atencioso.",
-    rating: 5,
-    relative_time_description: "2 dias atrás"
-  },
-  {
-    author_name: "Ricardo Gomes",
-    text: "Limpeza completa e troca de pasta térmica. Meu PC parou de esquentar. Recomendo!",
-    rating: 5,
-    relative_time_description: "1 mês atrás"
-  },
-  {
-    author_name: "Juliana Martins",
-    text: "Formatação rápida e backup dos meus arquivos garantido. Muito confiável.",
-    rating: 5,
-    relative_time_description: "3 meses atrás"
-  },
-  {
-    author_name: "Pedro Alves",
-    text: "Excelente atendimento via WhatsApp e entrega no prazo combinado.",
-    rating: 5,
-    relative_time_description: "2 semanas atrás"
-  },
-  {
-    author_name: "Lucas Oliveira",
-    text: "O técnico foi muito honesto sobre o problema da minha placa mãe. Ganhou um cliente fiel.",
-    rating: 5,
-    relative_time_description: "4 meses atrás"
-  },
-  {
-    author_name: "Beatriz Souza",
-    text: "Serviço de primeira qualidade. O computador ficou como novo!",
-    rating: 5,
-    relative_time_description: "1 semana atrás"
   }
 ];
 
 export default function SocialProof() {
   return (
     <section id="social-proof" className="py-20 bg-[#171717]">
-      <div className="container mx-auto px-4">
+      <div className="w-[90%] md:w-[80%] mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-display">
             Por que Nossos Clientes Confiam na voitechrj?
@@ -98,7 +62,7 @@ export default function SocialProof() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {testimonials.map((review, index) => (
             <motion.div
               key={index}

@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-[#0a0a0a]/90 backdrop-blur-md shadow-sm border-b border-white/5">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div className="w-[90%] md:w-[80%] mx-auto px-4 py-3 flex justify-between items-center">
         <div 
           className="flex items-center gap-3 cursor-pointer"
           onClick={() => scrollToSection("hero")}

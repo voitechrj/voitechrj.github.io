@@ -10,7 +10,7 @@ export default function Benefits() {
 
   return (
     <section className="py-20 bg-[var(--color-primary)] text-white overflow-hidden relative">
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="w-[90%] md:w-[80%] mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
             <motion.h2 

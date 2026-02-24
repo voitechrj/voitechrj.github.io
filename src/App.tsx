@@ -6,7 +6,8 @@ import Benefits from "./components/Benefits";
 import FAQ from "./components/FAQ";
 import BookingForm from "./components/BookingForm";
 import Footer from "./components/Footer";
-import LiveChat from "./components/LiveChat";
+import FAQWidget from "./components/FAQWidget";
+import BackToTop from "./components/BackToTop";
 
 export default function App() {
   return (
@@ -21,7 +22,8 @@ export default function App() {
         <FAQ />
       </main>
       <Footer />
-      <LiveChat />
+      <FAQWidget />
+      <BackToTop />
     </div>
   );
 }
