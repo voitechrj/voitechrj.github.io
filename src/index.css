@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #034694; /* Chelsea Blue */
+  --color-primary-hover: #023675;
+  --color-secondary: #1f2937; /* Dark Gray */
+  --color-accent: #034694; /* Using Chelsea Blue as main accent too, or maybe a lighter variant for contrast */
+  --color-background: #0a0a0a; /* Almost Black */
+  --color-surface: #171717; /* Dark Gray Surface */
+  --color-text: #f3f4f6; /* Off-white */
+  --color-text-muted: #9ca3af; /* Gray-400 */
+  
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
