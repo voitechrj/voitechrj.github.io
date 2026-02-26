@@ -8,15 +8,20 @@ type FooterProps = {
 export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps) {
   return (
     <footer className="bg-black text-white pt-16 pb-8 border-t border-white/10">
-      <div className="w-[90%] md:w-[80%] mx-auto px-4">
+      <div className="w-[90%] max-w-5xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           
           {/* Brand Info */}
-          <div>
-            <h3 className="text-2xl font-bold text-white mb-6 font-display">voitechrj</h3>
+          <div className="border border-white/10 rounded-lg p-4">
+            <h3 className="text-2xl font-bold text-white mb-6 font-display">
+              voitechrj
+            </h3>
+
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Sua parceira confiável para soluções de TI. Manutenção rápida, honesta e eficiente para você e sua empresa.
+              Sua parceira confiável para soluções de TI. Manutenção rápida,
+              honesta e eficiente para você e sua empresa.
             </p>
+
             <div className="flex space-x-4">
               <a
                 href="https://www.facebook.com/voitechrj/"
@@ -26,6 +31,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps) {
               >
                 <Facebook size={20} />
               </a>
+
               <a
                 href="https://www.instagram.com/voitechrj"
                 target="_blank"
@@ -38,11 +44,14 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps) {
           </div>
 
           {/* Contact Info */}
-          <div>
-            <h4 className="text-lg font-bold text-white mb-6 font-display">Entre em Contato</h4>
+          <div className="border border-white/10 rounded-lg p-4">
+            <h4 className="text-lg font-bold text-white mb-6 font-display">
+              Entre em Contato
+            </h4>
+
             <ul className="space-y-4">
-              <li className="flex items-start gap-3 text-gray-400">
-                <Phone className="text-[var(--color-primary)] mt-1" size={18} />
+              <li className="flex items-center gap-3 text-gray-400">
+                <Phone className="text-[var(--color-primary)]" size={18} />
                 <a
                   href="tel:+5521994472406"
                   className="hover:text-white transition-colors"
@@ -50,8 +59,9 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps) {
                   (21) 99447-2406
                 </a>
               </li>
-              <li className="flex items-start gap-3 text-gray-400">
-                <Mail className="text-[var(--color-primary)] mt-1" size={18} />
+
+              <li className="flex items-center gap-3 text-gray-400">
+                <Mail className="text-[var(--color-primary)]" size={18} />
                 <a
                   href="mailto:voitechrj@gmail.com"
                   className="hover:text-white transition-colors break-all"
@@ -59,10 +69,11 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps) {
                   voitechrj@gmail.com
                 </a>
               </li>
-              <li className="flex items-start gap-3 text-gray-400">
-                <MapPin className="text-[var(--color-primary)] mt-1" size={18} />
+
+              <li className="flex items-center gap-3 text-gray-400">
+                <MapPin className="text-[var(--color-primary)]" size={18} />
                 <a
-                  href="https://www.google.com/maps/place/Voitechrj/@-22.8804551,-43.0954073,17z/data=!4m8!3m7!1s0x97013146222ed5:0x9e8be72486a0b8c6!8m2!3d-22.8804551!4d-43.0928324!9m1!1b1!16s%2Fg%2F11h_81qvl0!17m2!4m1!1e3!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDIyMy4wIKXMDSoASAFQAw%3D%3D"
+                  href="https://www.google.com/maps/@-22.8809748,-43.0936861,3a,75y,25.92h,92.03t/data=!3m7!1e1!3m5!1sa82cTSo-_Ao5nfYSJI9y2w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-2.0271671015952393%26panoid%3Da82cTSo-_Ao5nfYSJI9y2w%26yaw%3D25.91653893141337!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MDIyMy4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
@@ -74,19 +85,41 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps) {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h4 className="text-lg font-bold text-white mb-6 font-display">Links Rápidos</h4>
+          <div className="border border-white/10 rounded-lg p-4">
+            <h4 className="text-lg font-bold text-white mb-6 font-display">
+              Links Rápidos
+            </h4>
+
             <ul className="space-y-3">
-              <li><a href="#hero" className="text-gray-400 hover:text-white transition-colors">Início</a></li>
-              <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Diferenciais</a></li>
-              <li><a href="#social-proof" className="text-gray-400 hover:text-white transition-colors">Depoimentos</a></li>
-              <li><a href="#faq" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+              <li>
+                <a href="#hero" className="text-gray-400 hover:text-white transition-colors">
+                  Início
+                </a>
+              </li>
+              <li>
+                <a href="#features" className="text-gray-400 hover:text-white transition-colors">
+                  Diferenciais
+                </a>
+              </li>
+              <li>
+                <a href="#social-proof" className="text-gray-400 hover:text-white transition-colors">
+                  Depoimentos
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="text-gray-400 hover:text-white transition-colors">
+                  FAQ
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-white/10 pt-8 text-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} voitechrj. Todos os direitos reservados.</p>
+          <p>
+            &copy; {new Date().getFullYear()} voitechrj. Todos os direitos reservados.
+          </p>
+
           <div className="mt-2 flex flex-wrap items-center justify-center gap-4">
             <button
               type="button"
@@ -95,6 +128,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps) {
             >
               Política de Privacidade
             </button>
+
             <button
               type="button"
               onClick={onOpenTerms}

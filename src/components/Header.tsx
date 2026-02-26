@@ -33,21 +33,18 @@ export default function Header() {
             Diferenciais
           </button>
           <button onClick={() => scrollToSection("booking")} className="text-gray-300 hover:text-[var(--color-primary)] transition-colors font-medium">
-            Agendar Entrega
+            Agendar
           </button>
           <button onClick={() => scrollToSection("social-proof")} className="text-gray-300 hover:text-[var(--color-primary)] transition-colors font-medium">
             Depoimentos
           </button>
-          <button onClick={() => scrollToSection("faq")} className="text-gray-300 hover:text-[var(--color-primary)] transition-colors font-medium">
-            FAQ
-          </button>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => scrollToSection("booking")}
-            className="bg-[var(--color-primary)] text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:bg-[var(--color-primary-hover)] transition-colors"
+            onClick={() => scrollToSection("faq")}
+            className="bg-[var(--color-primary)] text-white text-sm px-4 py-1.5 rounded-full font-semibold shadow-lg hover:bg-[var(--color-primary-hover)] transition-colors"
           >
-            Falar no WhatsApp
+            Dúvidas Frequentes
           </motion.button>
         </nav>
 
@@ -72,19 +69,16 @@ export default function Header() {
               Diferenciais
             </button>
             <button onClick={() => scrollToSection("booking")} className="text-left text-gray-300 hover:text-[var(--color-primary)]">
-              Agendar Entrega
+              Agenda
             </button>
             <button onClick={() => scrollToSection("social-proof")} className="text-left text-gray-300 hover:text-[var(--color-primary)]">
               Depoimentos
             </button>
-            <button onClick={() => scrollToSection("faq")} className="text-left text-gray-300 hover:text-[var(--color-primary)]">
-              FAQ
-            </button>
             <button
-              onClick={() => scrollToSection("booking")}
-              className="bg-[var(--color-primary)] text-white px-6 py-3 rounded-full font-semibold text-center mt-2"
+              onClick={() => scrollToSection("faq")}
+              className="bg-[var(--color-primary)] text-white text-sm px-4 py-1.5 rounded-full font-semibold text-center mt-2"
             >
-              Falar no WhatsApp
+              Dúvidas Frequentes
             </button>
           </div>
         </motion.div>

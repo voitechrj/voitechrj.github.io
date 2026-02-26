@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   const scrollToBooking = () => {
@@ -58,27 +58,16 @@ export default function Hero() {
             <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0">
               Especialistas em upgrade de performance, limpeza e manutenção. Agende a entrega do seu equipamento e deixe o resto conosco.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex justify-center lg:justify-start">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={scrollToBooking}
                 className="bg-[var(--color-primary)] text-white text-lg font-bold px-8 py-4 rounded-full shadow-lg hover:bg-[var(--color-primary-hover)] transition-colors inline-flex items-center justify-center gap-2"
               >
-                Agendar
+                Agendar pelo WhatsApp
                 <ArrowRight size={20} />
               </motion.button>
-              <motion.a
-                href="https://wa.me/5521994472406"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-white/10 backdrop-blur-sm text-white border border-white/20 text-lg font-bold px-8 py-4 rounded-full shadow-lg hover:bg-white/20 transition-colors inline-flex items-center justify-center gap-2"
-              >
-                <MessageCircle size={20} />
-                WhatsApp
-              </motion.a>
             </div>
           </motion.div>
 

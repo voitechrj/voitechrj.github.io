@@ -18,5 +18,10 @@ export const faqs = [
   {
     question: "Vocês atendem empresas e residências?",
     answer: "Sim! Atendemos tanto clientes residenciais quanto pequenas e médias empresas, com soluções personalizadas para cada necessidade."
+  },
+  {
+    question: "Vocês têm loja física?",
+    answer:
+      "Nosso atendimento é em Niterói, RJ, dentro do condomínio 7 de Setembro, no bairro Fonseca. Não somos uma loja de rua aberta ao público: o endereço exibido no site é para entrega e retirada de equipamentos mediante agendamento prévio, feito pelo formulário ou pelo WhatsApp."
   }
 ];
