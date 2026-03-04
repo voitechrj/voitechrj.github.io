@@ -39,7 +39,7 @@ export default function SocialProof() {
           
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <motion.a 
-              href="https://www.google.com.br/search?q=Voitechrj&ludocid=11424479023818913990&lsig=AB86z5UapBfcaAyfAOMLey7SV1XN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D&lrd=0x97013146222ed5:0x9e8be72486a0b8c6,1,,,,"
+              href="https://search.google.com/local/reviews?placeid=ChIJ1S4iRjEBlwARxrighiTni54"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-[#1e1e1e] border border-white/20 text-white font-bold px-6 py-3 rounded-full shadow-md hover:bg-[#2a2a2a] hover:border-[var(--color-primary)] transition-all"
@@ -50,7 +50,7 @@ export default function SocialProof() {
             </motion.a>
 
             <motion.a 
-              href="https://g.page/r/Cca4oIYk54ueEBE/review"
+              href="https://search.google.com/local/writereview?placeid=ChIJ1S4iRjEBlwARxrighiTni54"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-[var(--color-primary)] text-white font-bold px-6 py-3 rounded-full shadow-md hover:bg-[var(--color-primary-hover)] transition-colors"
