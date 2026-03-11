@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "motion/react";
 import { Star, ChevronRight } from "lucide-react";
 
@@ -52,6 +53,54 @@ const testimonials = [
   }
 ];
 
+function TestimonialCard({ review, index }: { review: any, index: number }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const maxLength = 100;
+  const needsExpansion = review.text.length > maxLength;
+  
+  const displayText = !isExpanded && needsExpansion 
+    ? review.text.slice(0, maxLength).trim() + "..." 
+    : review.text;
+
+  return (
+    <motion.div
+      className="w-[80vw] sm:w-[350px] md:w-auto flex-shrink-0 snap-center bg-[#1e1e1e] p-6 rounded-2xl shadow-sm border border-white/5 hover:border-[var(--color-primary)] transition-colors flex flex-col h-full"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.05, duration: 0.5 }}
+    >
+      <div className="flex items-center gap-3 mb-4">
+        <div className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-sm">
+          {review.author_name.charAt(0)}
+        </div>
+        <div>
+          <p className="font-bold text-white text-sm line-clamp-1">{review.author_name}</p>
+          <div className="flex text-yellow-400">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} fill={i < review.rating ? "currentColor" : "none"} size={12} />
+            ))}
+          </div>
+        </div>
+      </div>
+      
+      <div className="flex-grow flex flex-col items-start">
+        <p className="text-gray-300 italic text-sm">"{displayText}"</p>
+        {needsExpansion && (
+          <button 
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="text-[var(--color-primary)] text-xs font-medium mt-2 hover:underline focus:outline-none"
+          >
+            {isExpanded ? "Ver menos" : "Veja mais"}
+          </button>
+        )}
+      </div>
+      
+      <p className="text-xs text-gray-500 mt-4">{review.relative_time_description}</p>
+    </motion.div>
+  );
+}
+
 export default function SocialProof() {
   return (
     <section id="social-proof" className="py-20 bg-[#171717]">
@@ -71,34 +120,9 @@ export default function SocialProof() {
           <ChevronRight size={16} />
         </div>
 
-        <div className="-mx-4 px-4 md:mx-0 md:px-0 flex overflow-x-auto snap-x snap-mandatory gap-4 md:gap-6 pb-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:overflow-visible md:pb-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+        <div className="-mx-4 px-4 md:mx-0 md:px-0 flex items-stretch overflow-x-auto snap-x snap-mandatory gap-4 md:gap-6 pb-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:overflow-visible md:pb-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
           {testimonials.map((review, index) => (
-            <motion.div
-              key={index}
-              className="w-[80vw] sm:w-[350px] md:w-auto flex-shrink-0 snap-center bg-[#1e1e1e] p-6 rounded-2xl shadow-sm border border-white/5 hover:border-[var(--color-primary)] transition-colors flex flex-col h-full"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.05, duration: 0.5 }}
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  {review.author_name.charAt(0)}
-                </div>
-                <div>
-                  <p className="font-bold text-white text-sm line-clamp-1">{review.author_name}</p>
-                  <div className="flex text-yellow-400">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} fill={i < review.rating ? "currentColor" : "none"} size={12} />
-                    ))}
-                  </div>
-                </div>
-              </div>
-              
-              <p className="text-gray-300 italic mb-4 text-sm flex-grow">"{review.text}"</p>
-              
-              <p className="text-xs text-gray-500 mt-auto">{review.relative_time_description}</p>
-            </motion.div>
+            <TestimonialCard key={index} review={review} index={index} />
           ))}
         </div>
 
