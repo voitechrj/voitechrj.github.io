@@ -115,15 +115,20 @@ export default function SocialProof() {
           </p>
         </div>
 
-        {/* Gradient mask to indicate scrollability on mobile */}
+        {/* Carousel Container */}
         <div className="relative">
-          <div className="md:hidden absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-[#171717] to-transparent z-10 pointer-events-none"></div>
-          
-          <div className="-mx-4 px-4 md:mx-0 md:px-0 flex items-stretch overflow-x-auto snap-x snap-mandatory gap-4 md:gap-6 pb-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:overflow-visible md:pb-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+          <div className="-mx-4 px-4 md:mx-0 md:px-0 flex items-stretch overflow-x-auto snap-x snap-mandatory gap-4 md:gap-6 pb-6 md:grid md:grid-cols-2 lg:grid-cols-4 md:overflow-visible md:pb-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
             {testimonials.map((review, index) => (
               <TestimonialCard key={index} review={review} index={index} />
             ))}
           </div>
+        </div>
+
+        {/* Mobile Swipe Indicator below carousel */}
+        <div className="md:hidden flex items-center justify-center gap-1 text-gray-500 mt-2 mb-4 text-xs italic">
+          <ChevronRight size={14} className="rotate-180" />
+          <span>Deslize</span>
+          <ChevronRight size={14} />
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-center text-center">
