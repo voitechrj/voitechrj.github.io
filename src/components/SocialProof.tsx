@@ -55,7 +55,7 @@ const testimonials = [
 
 function TestimonialCard({ review, index }: { review: any, index: number }) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const maxLength = 100;
+  const maxLength = 80;
   const needsExpansion = review.text.length > maxLength;
   
   const displayText = !isExpanded && needsExpansion 
@@ -64,39 +64,39 @@ function TestimonialCard({ review, index }: { review: any, index: number }) {
 
   return (
     <motion.div
-      className="w-[75vw] sm:w-[300px] md:w-auto flex-shrink-0 snap-center bg-[#1e1e1e] p-5 md:p-6 rounded-2xl shadow-sm border border-white/5 hover:border-[var(--color-primary)] transition-colors flex flex-col h-full"
+      className="w-[42vw] sm:w-[300px] md:w-auto flex-shrink-0 snap-center bg-[#1e1e1e] p-4 md:p-6 rounded-2xl shadow-sm border border-white/5 hover:border-[var(--color-primary)] transition-colors flex flex-col"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.05, duration: 0.5 }}
     >
-      <div className="flex items-center gap-3 mb-4">
-        <div className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-sm">
+      <div className="flex flex-col xl:flex-row items-start xl:items-center gap-2 xl:gap-3 mb-3 md:mb-4">
+        <div className="w-8 h-8 md:w-10 md:h-10 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-xs md:text-sm shrink-0">
           {review.author_name.charAt(0)}
         </div>
         <div>
-          <p className="font-bold text-white text-sm line-clamp-1">{review.author_name}</p>
-          <div className="flex text-yellow-400">
+          <p className="font-bold text-white text-xs md:text-sm line-clamp-1">{review.author_name}</p>
+          <div className="flex text-yellow-400 mt-0.5">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} fill={i < review.rating ? "currentColor" : "none"} size={12} />
+              <Star key={i} fill={i < review.rating ? "currentColor" : "none"} className="w-2.5 h-2.5 md:w-3 md:h-3" />
             ))}
           </div>
         </div>
       </div>
       
       <div className="flex-grow flex flex-col items-start">
-        <p className="text-gray-300 italic text-sm">"{displayText}"</p>
+        <p className="text-gray-300 italic text-xs md:text-sm">"{displayText}"</p>
         {needsExpansion && (
           <button 
             onClick={() => setIsExpanded(!isExpanded)}
-            className="text-[var(--color-primary)] text-xs font-medium mt-2 hover:underline focus:outline-none"
+            className="text-[var(--color-primary)] text-[10px] md:text-xs font-medium mt-2 hover:underline focus:outline-none"
           >
             {isExpanded ? "Ver menos" : "Veja mais"}
           </button>
         )}
       </div>
       
-      <p className="text-xs text-gray-500 mt-4">{review.relative_time_description}</p>
+      <p className="text-[10px] md:text-xs text-gray-500 mt-3 md:mt-4">{review.relative_time_description}</p>
     </motion.div>
   );
 }
