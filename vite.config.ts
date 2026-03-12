@@ -12,9 +12,11 @@ export default defineConfig(({ mode }) => {
     
     plugins: [react(), tailwindcss()],
     
-    define: {
-      'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+        define: {
+      // O Vite busca primeiro a variável do GitHub (VITE_...) e depois a do .env local
+      'process.env.GEMINI_API_KEY': JSON.stringify(env.VITE_GEMINI_API_KEY || env.GEMINI_API_KEY),
     },
+
     
     resolve: {
       alias: {
