@@ -27,7 +27,8 @@ jobs:
 
       - name: Build
         run: npm run build
-        # Aqui o Vite vai usar o seu novo vite.config.ts com base: './'
+        env:
+          VITE_GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
