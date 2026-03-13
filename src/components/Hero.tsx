@@ -88,7 +88,7 @@ export default function Hero() {
                   className="flex-1 h-[60px] flex items-center justify-center gap-1.5 bg-[#1e1e1e] border border-white/20 text-white font-medium px-2 rounded-full shadow-sm hover:bg-[#2a2a2a] hover:border-[var(--color-primary)] transition-all text-sm"
                   whileHover={{ scale: 1.02 }}
                 >
-                  <Star size={16} fill="currentColor" className="text-yellow-400 flex-shrink-0" />
+                  <Star size={16} fill="currentColor" className="text-white-400 flex-shrink-0" />
                   <span className="truncate">Avaliar</span>
                 </motion.a>
               </div>
