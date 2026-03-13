@@ -105,7 +105,7 @@ export default function SocialProof() {
   return (
     <section id="social-proof" className="py-20 bg-[#171717]">
       <div className="w-[90%] md:w-[80%] mx-auto px-4">
-        <div className="text-center mb-8 md:mb-12">
+        <div className="text-center mb-8 md:mb-12 select-none">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-display">
             Por que Nossos Clientes Confiam na voitechrj?
           </h2>
@@ -121,7 +121,7 @@ export default function SocialProof() {
           ))}
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-center text-center">
+        <div className="mt-12 flex flex-col items-center justify-center text-center select-none">
           <h3 className="text-white text-3xl font-bold mb-2 font-display tracking-tight">Voitechrj</h3>
           <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-lg">
             <div className="flex items-center gap-2">
@@ -135,10 +135,10 @@ export default function SocialProof() {
               </div>
             </div>
             <a 
-              href="https://www.google.com.br/search?q=Voitechrj&ludocid=11424479023818913990&lsig=AB86z5UapBfcaAyfAOMLey7SV1XN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D&lrd=0x97013146222ed5:0x9e8be72486a0b8c6,1,,,,"
+              href="https://www.google.com.br/search?q=Voitechrj&ludocid=11424479023818913990&lsig=AB86z5UapBfcaAyfAOMLey7SV1XN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D&lrd=0x97013146222ed5:0x9e8be72486a0b8c6,1,,,"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#8ab4f8] hover:underline font-medium"
+              className="text-[#8ab4f8] hover:underline font-medium focus:outline-none"
             >
               139 avaliações no Google
             </a>
