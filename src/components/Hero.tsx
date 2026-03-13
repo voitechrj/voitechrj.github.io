@@ -35,7 +35,7 @@ export default function Hero() {
   return (
     <section 
       id="hero" 
-      className="relative pt-20 pb-32 overflow-hidden bg-[var(--color-background)]"
+      className="relative pt-8 md:pt-12 pb-32 overflow-hidden bg-[var(--color-background)]"
     >
       {/* Dark Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-950 to-black z-0"></div>
@@ -43,7 +43,7 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[var(--color-primary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="w-[90%] md:w-[80%] mx-auto px-4 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex flex-col lg:flex-row items-center gap-12 select-none">
           
           {/* Text Content */}
           <motion.div 
@@ -58,12 +58,12 @@ export default function Hero() {
             <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0">
               Especialistas em upgrade de performance, limpeza e manutenção. Agende a entrega do seu equipamento e deixe o resto conosco.
             </p>
-            <div className="flex flex-col items-center lg:items-start gap-3 w-full sm:w-max">
+            <div className="flex flex-col items-center lg:items-start gap-3 w-full sm:w-max select-none">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={scrollToBooking}
-                className="w-full h-[60px] bg-[var(--color-primary)] text-white text-lg font-bold px-8 rounded-full shadow-lg hover:bg-[var(--color-primary-hover)] transition-colors flex items-center justify-center gap-2"
+                className="w-full h-[60px] bg-[var(--color-primary)] text-white text-lg font-bold px-8 rounded-full shadow-lg hover:bg-[var(--color-primary-hover)] transition-colors flex items-center justify-center gap-2 focus:outline-none"
               >
                 Agendar pelo WhatsApp
                 <ArrowRight size={20} />
@@ -71,10 +71,10 @@ export default function Hero() {
 
               <div className="flex flex-row gap-3 w-full">
                 <motion.a 
-                  href="https://www.google.com.br/search?q=Voitechrj&ludocid=11424479023818913990&lsig=AB86z5UapBfcaAyfAOMLey7SV1XN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D&lrd=0x97013146222ed5:0x9e8be72486a0b8c6,1,,,,"
+                  href="https://www.google.com.br/search?q=Voitechrj&ludocid=11424479023818913990&lsig=AB86z5UapBfcaAyfAOMLey7SV1XN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D&lrd=0x97013146222ed5:0x9e8be72486a0b8c6,1,,,"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 h-[60px] flex items-center justify-center gap-1.5 bg-[#1e1e1e] border border-white/20 text-white font-medium px-2 rounded-full shadow-sm hover:bg-[#2a2a2a] hover:border-[var(--color-primary)] transition-all text-sm"
+                  className="flex-1 h-[60px] flex items-center justify-center gap-1.5 bg-[#1e1e1e] border border-white/20 text-white font-medium px-2 rounded-full shadow-sm hover:bg-[#2a2a2a] hover:border-[var(--color-primary)] transition-all text-sm focus:outline-none"
                   whileHover={{ scale: 1.02 }}
                 >
                   <ExternalLink size={16} className="flex-shrink-0" />
@@ -85,7 +85,7 @@ export default function Hero() {
                   href="https://g.page/r/Cca4oIYk54ueEBE/review"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 h-[60px] flex items-center justify-center gap-1.5 bg-[#1e1e1e] border border-white/20 text-white font-medium px-2 rounded-full shadow-sm hover:bg-[#2a2a2a] hover:border-[var(--color-primary)] transition-all text-sm"
+                  className="flex-1 h-[60px] flex items-center justify-center gap-1.5 bg-[#1e1e1e] border border-white/20 text-white font-medium px-2 rounded-full shadow-sm hover:bg-[#2a2a2a] hover:border-[var(--color-primary)] transition-all text-sm focus:outline-none"
                   whileHover={{ scale: 1.02 }}
                 >
                   <Star size={16} fill="currentColor" className="text-white-400 flex-shrink-0" />
