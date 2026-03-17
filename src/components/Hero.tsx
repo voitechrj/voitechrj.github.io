@@ -38,7 +38,7 @@ export default function Hero() {
       className="relative pt-8 md:pt-12 pb-32 overflow-hidden bg-[var(--color-background)]"
     >
       {/* Dark Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-gray-950 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-950 to-black z-0"></div>
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[var(--color-primary)]/20 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[var(--color-primary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
 

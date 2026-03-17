@@ -53,7 +53,7 @@ const testimonials = [
   }
 ];
 
-function TestimonialCard({ review, index }: { review: any, index: number, key?: any }) {
+function TestimonialCard({ review, index }: { review: any, index: number }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const maxLength = 65;
   const needsExpansion = review.text.length > maxLength;
@@ -103,13 +103,8 @@ function TestimonialCard({ review, index }: { review: any, index: number, key?: 
 
 export default function SocialProof() {
   return (
-    <section id="social-proof" className="py-20 bg-[#171717] relative overflow-hidden">
-      {/* Dark Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-950 to-black z-0"></div>
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[var(--color-primary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[var(--color-primary)]/5 rounded-full blur-[120px] pointer-events-none"></div>
-
-      <div className="w-[90%] md:w-[80%] mx-auto px-4 relative z-10">
+    <section id="social-proof" className="py-20 bg-[#171717]">
+      <div className="w-[90%] md:w-[80%] mx-auto px-4">
         <div className="text-center mb-8 md:mb-12 select-none">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-display">
             Por que a voitechrj?

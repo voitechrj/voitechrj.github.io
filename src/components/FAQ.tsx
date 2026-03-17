@@ -11,13 +11,8 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-20 bg-[#121212] relative overflow-hidden">
-      {/* Dark Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-950 to-black z-0"></div>
-      <div className="absolute top-1/4 -left-20 w-[400px] h-[400px] bg-[var(--color-primary)]/10 rounded-full blur-[100px] pointer-events-none"></div>
-      <div className="absolute bottom-1/4 -right-20 w-[400px] h-[400px] bg-[var(--color-primary)]/5 rounded-full blur-[100px] pointer-events-none"></div>
-
-      <div className="w-[90%] md:w-[80%] mx-auto px-4 max-w-3xl relative z-10">
+    <section id="faq" className="py-20 bg-[#121212]">
+      <div className="w-[90%] md:w-[80%] mx-auto px-4 max-w-3xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-display">
             Dúvidas Frequentes
