@@ -147,4 +147,4 @@ export default function SocialProof() {
       </div>
     </section>
   );
-} 
+}
