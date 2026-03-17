@@ -13,9 +13,19 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps) {
           
           {/* Brand Info */}
           <div className="border border-white/10 rounded-lg p-4">
-            <h3 className="text-2xl font-bold text-white mb-6 font-display">
-              voitechrj
-            </h3>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="relative w-10 h-10 rounded-full overflow-hidden border border-white/10 shadow-lg bg-black flex items-center justify-center">
+                <img 
+                  src="/voitechrj-logo.png" 
+                  alt="voitechrj Logo" 
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-white font-display">
+                voitechrj
+              </h3>
+            </div>
 
             <p className="text-gray-400 mb-6 leading-relaxed">
               Sua parceira confiável para soluções de TI. Manutenção rápida,

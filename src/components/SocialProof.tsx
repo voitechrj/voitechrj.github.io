@@ -121,7 +121,15 @@ export default function SocialProof() {
           ))}
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-center text-center select-none space-y-2">
+        <div className="mt-12 flex flex-col items-center justify-center text-center select-none space-y-3">
+          <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-white/10 shadow-xl bg-black flex items-center justify-center mb-1">
+            <img 
+              src="/voitechrj-logo.png" 
+              alt="voitechrj Logo" 
+              className="w-full h-full object-cover"
+              referrerPolicy="no-referrer"
+            />
+          </div>
           <h3 className="text-white text-4xl font-bold font-display tracking-tight">voitechrj</h3>
           
           <div className="flex items-center justify-center gap-2 text-xl">
