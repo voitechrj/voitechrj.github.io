@@ -32,8 +32,12 @@ export default function BookingForm() {
   };
 
   return (
-    <section id="booking" className="py-20 bg-[#121212]">
-      <div className="w-[90%] md:w-[80%] mx-auto px-4 max-w-3xl">
+    <section id="booking" className="py-20 bg-[#121212] relative overflow-hidden">
+      {/* Dark Gradient Background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-gray-950 z-0"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[var(--color-primary)]/10 rounded-full blur-[150px] pointer-events-none"></div>
+
+      <div className="w-[90%] md:w-[80%] mx-auto px-4 max-w-3xl relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-display">
             Agendar

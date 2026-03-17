@@ -10,6 +10,11 @@ export default function Benefits() {
 
   return (
     <section className="py-20 bg-[var(--color-primary)] text-white overflow-hidden relative">
+      {/* Subtle Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black/20 via-transparent to-black/20 z-0"></div>
+      <div className="absolute -top-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-black/20 rounded-full blur-3xl pointer-events-none"></div>
+
       <div className="w-[90%] md:w-[80%] mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
