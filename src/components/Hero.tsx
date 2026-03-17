@@ -114,6 +114,7 @@ export default function Hero() {
                       src={service.image} 
                       alt={service.title} 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
                   </div>

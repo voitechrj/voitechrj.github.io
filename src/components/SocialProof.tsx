@@ -121,28 +121,28 @@ export default function SocialProof() {
           ))}
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-center text-center select-none">
-          <h3 className="text-white text-3xl font-bold mb-2 font-display tracking-tight">Voitechrj</h3>
-          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-lg">
-            <div className="flex items-center gap-2">
-              <span className="text-gray-300 font-medium">5,0</span>
-              <div className="flex text-white-400 gap-0.5">
-                <Star size={18} fill="currentColor" />
-                <Star size={18} fill="currentColor" />
-                <Star size={18} fill="currentColor" />
-                <Star size={18} fill="currentColor" />
-                <Star size={18} fill="currentColor" />
-              </div>
+        <div className="mt-12 flex flex-col items-center justify-center text-center select-none space-y-2">
+          <h3 className="text-white text-4xl font-bold font-display tracking-tight">voitechrj</h3>
+          
+          <div className="flex items-center justify-center gap-2 text-xl">
+            <span className="text-gray-300 font-medium">5,0</span>
+            <div className="flex text-white-400 gap-0.5">
+              <Star size={20} fill="currentColor" />
+              <Star size={20} fill="currentColor" />
+              <Star size={20} fill="currentColor" />
+              <Star size={20} fill="currentColor" />
+              <Star size={20} fill="currentColor" />
             </div>
-            <a 
-              href="https://www.google.com.br/search?q=Voitechrj&ludocid=11424479023818913990&lsig=AB86z5UapBfcaAyfAOMLey7SV1XN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D&lrd=0x97013146222ed5:0x9e8be72486a0b8c6,1,,,"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#8ab4f8] hover:underline font-medium focus:outline-none"
-            >
-              139 avaliações no Google
-            </a>
           </div>
+
+          <a 
+            href="https://www.google.com.br/search?q=Voitechrj&ludocid=11424479023818913990&lsig=AB86z5UapBfcaAyfAOMLey7SV1XN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D&lrd=0x97013146222ed5:0x9e8be72486a0b8c6,1,,,"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#8ab4f8] hover:underline text-xl font-medium focus:outline-none"
+          >
+            139 avaliações no Google
+          </a>
         </div>
       </div>
     </section>

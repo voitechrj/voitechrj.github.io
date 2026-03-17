@@ -55,6 +55,7 @@ export default function Benefits() {
                   src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop" 
                   alt="Tranquilidade no trabalho" 
                   className="relative rounded-2xl shadow-2xl border-4 border-white/10 w-full max-w-md mx-auto grayscale hover:grayscale-0 transition-all duration-500"
+                  referrerPolicy="no-referrer"
                 />
              </motion.div>
           </div>
