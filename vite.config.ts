@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
   
   return {
     // Define o caminho base como relativo para funcionar no GitHub Pages
-    base: '/', 
+    base: './', 
     
     plugins: [react(), tailwindcss()],
     
