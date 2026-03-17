@@ -7,8 +7,8 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   
   return {
-    // Define o caminho base como relativo para funcionar no GitHub Pages
-    base: './', 
+    // Define o caminho base como raiz para o domínio principal voitechrj.github.io
+    base: '/', 
     
     plugins: [react(), tailwindcss()],
     
